@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World From git declarativeJenkinsPipeline'
+            }
+        }
+        stage('Build Project Stage') {
+            steps {
+                echo 'From git declarativeJenkinsPipeline : Build is ready ........ Thank you !!'
+            }
+        }
+        stage('Deploy Project Stage') {
+            steps {
+                echo 'From git declarativeJenkinsPipeline : Deployment is completed successfully ........ Thank you !!'
+            }
+        }
+         stage('Testing Project Stage') {
+            steps {
+                echo 'From git declarativeJenkinsPipeline : Testing is completed successfully ........ Thank you !!'
+            }
+        }
+        stage('Release Project Stage') {
+            steps {
+                echo 'From git declarativeJenkinsPipeline : The project is ready to be released... Release completed successfully ........ Thank you !!'
+            }
+        }
+        
+    }
+}
